@@ -6,7 +6,7 @@ export const FETCH_DATA_SUCCESS = 'FETCH_DATA_SUCCESS';
 export default function fetchDataSuccess(data) {
     return {
     type: FETCH_DATA_SUCCESS,
-    data
+    payload : data
     };
 }
 

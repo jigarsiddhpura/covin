@@ -3,16 +3,16 @@ import { useState } from "react";
 import * as React from "react";
 import "../App.css";
 import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
-import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import { CardActionArea } from '@mui/material';
 import fetchDataSuccess  from "../state/action";
 import appStore from "../state/store";
+import { useDispatch , Provider } from "react-redux";
 
 const Home = () => {
+
+  const dispatch = useDispatch();
   const [usersData, setUsersData] = useState();
 
   const sendGetRequest = async () => {

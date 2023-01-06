@@ -7,7 +7,7 @@ function dataReducer(state = {}, action) {
     case FETCH_DATA_SUCCESS:
         return {
         ...state,
-        data: action.data
+        data: action.payload
         };
     default:
         return state;
